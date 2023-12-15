@@ -1,8 +1,20 @@
-# React + Vite
+# Proyek: Membangun Single Page Application menggunakan React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Buatlah Single Page Application menggunakan React dengan kriteria berikut ini.
 
-Currently, two official plugins are available:
+## Website View
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tampilan website, menggunakan tailwind dan daisyUI
+
+![Website View](public/webview1.png)
+![Website View](public/webview2.png)
+![Website View](public/webview3.png)
+![Website View](public/webview4.png)
+![Website View](public/webview5.png)
+
+## Features
+
+- Search Notes
+- Add New Notes
+- Delete Notes
+- Archive Notes
