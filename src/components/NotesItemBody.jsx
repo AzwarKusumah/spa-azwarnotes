@@ -1,5 +1,6 @@
 import React from "react";
 import NotesItemList from "./NotesItemList";
+import PropType from "prop-types";
 
 function NotesItemBody({ notes }) {
   return (
@@ -12,5 +13,9 @@ function NotesItemBody({ notes }) {
     </>
   );
 }
+
+NotesItemBody.proptype = {
+  notes: PropType.object.isRequired,
+};
 
 export default NotesItemBody;

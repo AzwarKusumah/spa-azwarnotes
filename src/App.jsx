@@ -5,6 +5,7 @@ import Navigation from "./components/Misc/Navigation";
 import HomePage from "./pages/HomePage";
 import DetailPage from "./pages/DetailPage";
 import ArchivePage from "./pages/ArchivePage";
+import AddPage from "./pages/AddPage";
 
 import Page404 from "./pages/Page404";
 import Footer from "./components/Misc/Footer";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/notes/:id" element={<DetailPage />} />
           <Route path="/archive" element={<ArchivePage />} />
+          <Route path="/notes/new" element={<AddPage />} />
         </Routes>
       </main>
       <Footer />

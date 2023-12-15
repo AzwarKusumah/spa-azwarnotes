@@ -50,6 +50,9 @@ class ArchivePage extends Component {
   }
 }
 
-ArchivePage.propTypes = {};
+ArchivePage.propTypes = {
+  onSearch: PropTypes.func.isRequired,
+  defaultKeyword: PropTypes.string.isRequired,
+};
 
 export default ArchivePageWrapper;

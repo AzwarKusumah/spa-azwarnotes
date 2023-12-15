@@ -4,6 +4,7 @@ import { getActiveNotes } from "../utils/local-data";
 import PropTypes from "prop-types";
 
 import NotesItemBody from "../components/NotesItemBody";
+import NotesAdd from "../components/NotesAdd";
 import NotesSearch from "../components/NotesSearch";
 
 function HomePageWrapper() {
@@ -46,9 +47,15 @@ class HomePage extends Component {
         <h2 className="text-2xl font-bold mb-8 text-center">Catatan Aktif</h2>
         <NotesSearch onSearch={this.onSearchEventhandler} />
         <NotesItemBody notes={notes} />
+        <NotesAdd />
       </>
     );
   }
 }
+
+HomePage.propTypes = {
+  onSearch: PropTypes.func.isRequired,
+  defaultKeyword: PropTypes.string.isRequired,
+};
 
 export default HomePageWrapper;
