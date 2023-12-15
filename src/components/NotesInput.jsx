@@ -18,7 +18,7 @@ class NotesInput extends Component {
   }
 
   onBodyChangeEventHandler(event) {
-    this.setState({ body: event.target.innerHTML });
+    this.setState({ body: event.target.innerText });
   }
 
   onSubmitEventHandler() {

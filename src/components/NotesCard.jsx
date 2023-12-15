@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { showFormattedDate } from "../utils/index";
+import parser from "html-react-parser";
 import PropTypes from "prop-types";
 
 function NotesCard({ id, title, body, createdAt }) {
@@ -11,7 +12,7 @@ function NotesCard({ id, title, body, createdAt }) {
           <Link to={`/notes/${id}`}>{title}</Link>
         </h2>
         <span className="text-sm">{showFormattedDate(createdAt)}</span>
-        <p>{body}</p>
+        <p>{parser(body)}</p>
       </div>
     </div>
   );
