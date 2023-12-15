@@ -46,11 +46,9 @@ class DetailPage extends Component {
 
   render() {
     const { notes } = this.state;
-    if (!notes) {
-      return <Page404 />;
-    }
-
-    return (
+    return !notes ? (
+      <Page404 />
+    ) : (
       <>
         <NotesDetailPage notes={notes} />
         <NotesDetailAction
